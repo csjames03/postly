@@ -1,8 +1,6 @@
 import Link from "next/link"
 import Form from "./form"
 
-export const revalidate = 0
-
 async function getPosts() {
   const res= await fetch(`${process.env.BASE_URL}/api/getposts`)
   if(!res.ok){
